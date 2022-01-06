@@ -70,5 +70,5 @@ cp -r riscv64-chroot/* 'where the second part of your sdcard mounts'
 sync
 ```
 # Rootfs arball
-A prebuilt bitstream for nexys video prebuilt is uploaded.  
+A prebuilt bitstream for nexys video is uploaded.  
 And a rootfs tarball is on the release page.
