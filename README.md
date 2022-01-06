@@ -71,4 +71,4 @@ sync
 ```
 # Rootfs tarball
 A prebuilt bitstream for nexys video is uploaded.  
-And a rootfs tarball is on the release page, the root password is 'password'.
+And a rootfs tarball is on the release page. The root password is 'password'.
