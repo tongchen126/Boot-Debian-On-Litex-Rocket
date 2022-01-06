@@ -73,3 +73,9 @@ sync
 A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
   
 A rootfs tarball is on the release page. The root password is 'password'.  
+
+
+
+# Demo on Nexys Video  
+[video](https://user-images.githubusercontent.com/31961076/148379809-498dda97-2297-4b3c-8180-8a1d49f2c028.mp4)
+
