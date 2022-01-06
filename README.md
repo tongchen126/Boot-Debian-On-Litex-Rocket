@@ -40,7 +40,7 @@ iface eth0 inet dhcp
 EOF
 
 # Change from systemd to sysvinit
-apt-get install sysvinit-core libpam-elogind
+apt-get install sysvinit-core libpam-elogind -y
 
 # Set root password
 passwd
