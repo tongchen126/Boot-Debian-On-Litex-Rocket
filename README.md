@@ -17,6 +17,7 @@ Few points to mention:
 bootargs = "earlycon=sbi console=liteuart,115200 swiotlb=noforce root=/dev/mmcblk0p2 rootwait";
 
 ```
+See [nexys_video.dts](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/blob/main/nexys_video.dts) for more detail.
 
 # Step3: Build Debian rootfs
 Currently, there are some issues using Systemd as init function. (Like RCU Stall, Kernel oops).
