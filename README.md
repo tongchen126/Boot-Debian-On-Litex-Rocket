@@ -12,7 +12,7 @@ mkfs.ext4 /dev/YourSDCard_SecondPart
 Detailed information can be found [here](https://github.com/litex-hub/linux-on-litex-rocket#building-the-software-bootbin-busybox-linux-and-bbl).
 Few points to mention:
 1) Don't specify 'litex_rocket_initramfs' config when building kernel, as it will boot from Debian directly.
-2) Before building BBL(boot.bin), modify the bootargs of the dts file to specify the boot device. For example,
+2) Before building BBL(boot.bin), modify the bootargs of the dts file to specify the second partition of sdcard as boot device. For example,
 ```
 bootargs = "earlycon=sbi console=liteuart,115200 swiotlb=noforce root=/dev/mmcblk0p2 rootwait";
 
