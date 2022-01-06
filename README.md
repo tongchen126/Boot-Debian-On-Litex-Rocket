@@ -69,6 +69,6 @@ cp boot.bin 'where the first part of your sdcard mounts'
 cp -r riscv64-chroot/* 'where the second part of your sdcard mounts'
 sync
 ```
-# Rootfs arball
+# Rootfs tarball
 A prebuilt bitstream for nexys video is uploaded.  
-And a rootfs tarball is on the release page.
+And a rootfs tarball is on the release page, the root password is 'password'.
