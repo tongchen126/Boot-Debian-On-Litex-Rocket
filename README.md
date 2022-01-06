@@ -25,7 +25,8 @@ So we use sysvinit instead of systemd.
 ```
 sudo apt-get install debootstrap qemu-user-static binfmt-support debian-ports-archive-keyring -y
 # This is where you store the Debian rootfs.
-mkdir riscv64-chroot       
+mkdir riscv64-chroot 
+# You can change to other mirrors like ftp.kr.debian.org or ftp.de.debian.org if deb.debian.org was slow or failed to download some packages.
 sudo debootstrap --arch=riscv64 --keyring /usr/share/keyrings/debian-ports-archive-keyring.gpg --include=debian-ports-archive-keyring unstable riscv64-chroot http://deb.debian.org/debian-ports
 sudo chroot riscv64-chroot
 sudo apt-get update
