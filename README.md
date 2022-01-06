@@ -44,8 +44,6 @@ apt-get install sysvinit-core libpam-elogind -y
 
 # Set root password
 passwd
-# Disable the getty on hvc0 as hvc0 and ttyS0 share the same console device in qemu.
-ln -sf /dev/null /etc/systemd/system/serial-getty@hvc0.service  
 
 # Fix locales issues
 apt-get install locales
