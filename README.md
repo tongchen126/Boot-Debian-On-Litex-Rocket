@@ -29,7 +29,7 @@ mkdir riscv64-chroot
 # You can change to other mirrors like ftp.kr.debian.org or ftp.de.debian.org if deb.debian.org was slow or failed to download some packages.
 sudo debootstrap --arch=riscv64 --keyring /usr/share/keyrings/debian-ports-archive-keyring.gpg --include=debian-ports-archive-keyring unstable riscv64-chroot http://deb.debian.org/debian-ports
 sudo chroot riscv64-chroot
-sudo apt-get update
+apt-get update
 # Set up basic networking
 cat >>/etc/network/interfaces <<EOF
 auto lo
@@ -48,7 +48,7 @@ passwd
 ln -sf /dev/null /etc/systemd/system/serial-getty@hvc0.service  
 
 # Fix locales issues
-sudo apt-get install locales
+apt-get install locales
 dpkg-reconfigure locales
 
 # Add Litex Serial login console
