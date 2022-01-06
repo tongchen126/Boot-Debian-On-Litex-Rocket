@@ -1,3 +1,4 @@
+# Here is a few steps that might help you to boot debian on [Litex Rocket](https://github.com/litex-hub/linux-on-litex-rocket).  
 # Step1: SDCard preparation
 Partition the sdcard into two partitions.  
 The first partition is used to store boot.bin while the second to store rootfs.  
