@@ -67,5 +67,6 @@ Refer to the pages for more information: [Debian_Rootfs](https://wiki.debian.org
 cp boot.json 'where the first part of your sdcard mounts'
 cp boot.bin 'where the first part of your sdcard mounts'
 cp -r riscv64-chroot/* 'where the second part of your sdcard mounts'
+sync
 ```
 
