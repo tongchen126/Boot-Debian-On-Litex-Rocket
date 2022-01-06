@@ -62,7 +62,7 @@ exit
 ```
 Refer to the pages for more information: [Debian_Rootfs](https://wiki.debian.org/RISC-V), [Switch to sysvinit](https://wiki.debian.org/Init).
 # Step4: Copy the 'boot.bin' and rootfs to your sdcard
-'boot.json' is here.
+'boot.json' is [here](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/blob/main/boot.json).
 ```
 cp boot.json 'where the first part of your sdcard mounts'
 cp boot.bin 'where the first part of your sdcard mounts'
@@ -70,5 +70,5 @@ cp -r riscv64-chroot/* 'where the second part of your sdcard mounts'
 sync
 ```
 # Rootfs tarball
-A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.
-And a rootfs tarball is on the release page. The root password is 'password'.
+A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
+And a rootfs tarball is on the release page. The root password is 'password'.  
