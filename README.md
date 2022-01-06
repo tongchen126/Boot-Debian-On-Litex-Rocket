@@ -58,6 +58,7 @@ echo "T0:2345:respawn:/sbin/getty -L ttyLXU0 115200 vt100" >> /etc/inittab
 sync
 exit
 ```
+Refer to the pages for more information: [Debian_Rootfs](https://wiki.debian.org/RISC-V), [Switch to sysvinit](https://wiki.debian.org/Init).
 # Step4: Copy the 'boot.bin' and rootfs to your sdcard
 'boot.json' is here.
 ```
