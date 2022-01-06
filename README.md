@@ -52,6 +52,8 @@ passwd
 # Add Litex Serial login console
 echo "T0:2345:respawn:/sbin/getty -L ttyLXU0 115200 vt100" >> /etc/inittab
 
+# Some common stuff
+apt-get install net-tools vim bc -y
 # You can also change the hostname of your Debian rootfs by editing /etc/hostname
 # Save & Exit
 sync
