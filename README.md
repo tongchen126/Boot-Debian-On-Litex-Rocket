@@ -40,7 +40,7 @@ iface eth0 inet dhcp
 EOF
 
 # Fix locales issues
-apt-get install locales
+apt-get install locales -y
 dpkg-reconfigure locales
 
 # Change from systemd to sysvinit
