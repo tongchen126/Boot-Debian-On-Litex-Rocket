@@ -39,15 +39,15 @@ auto eth0
 iface eth0 inet dhcp
 EOF
 
+# Fix locales issues
+apt-get install locales
+dpkg-reconfigure locales
+
 # Change from systemd to sysvinit
 apt-get install sysvinit-core libpam-elogind -y
 
 # Set root password
 passwd
-
-# Fix locales issues
-apt-get install locales
-dpkg-reconfigure locales
 
 # Add Litex Serial login console
 echo "T0:2345:respawn:/sbin/getty -L ttyLXU0 115200 vt100" >> /etc/inittab
