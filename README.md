@@ -78,4 +78,3 @@ A rootfs tarball is on the release page. The root password is 'password'.
 
 # Demo on Nexys Video  
 [video](https://user-images.githubusercontent.com/31961076/148379809-498dda97-2297-4b3c-8180-8a1d49f2c028.mp4)
-
