@@ -70,5 +70,5 @@ cp -r riscv64-chroot/* 'where the second part of your sdcard mounts'
 sync
 ```
 # Rootfs tarball
-A prebuilt bitstream for nexys video is uploaded.  
+A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.
 And a rootfs tarball is on the release page. The root password is 'password'.
