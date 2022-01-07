@@ -59,7 +59,7 @@ passwd
 echo "T0:2345:respawn:/sbin/getty -L ttyLXU0 115200 vt100" >> /etc/inittab
 
 # Some common stuff
-apt-get install net-tools vim bc ntp -y
+apt-get install net-tools vim bc ntp openssh-server -y
 
 # Link the right timezone based on your location
 ln -sf /usr/share/zoneinfo/Etc/GMT+8 /etc/localtime
@@ -83,7 +83,7 @@ sync
 # Rootfs tarball
 A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
   
-A rootfs tarball is on the release page. The root password is 'password'.  
+A rootfs tarball is on the release page. The default root password is 'password'. You can skip Step 3 after downloading the tarball.
 
 
 
