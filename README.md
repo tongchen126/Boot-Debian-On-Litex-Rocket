@@ -12,8 +12,9 @@ mkfs.ext4 /dev/YourSDCard_SecondPart
 # Step2: Prepare 'boot.bin'
 Detailed information can be found [here](https://github.com/litex-hub/linux-on-litex-rocket#building-the-software-bootbin-busybox-linux-and-bbl).
 Few points to mention:
-1) Don't specify 'litex_rocket_initramfs' config when building kernel, as it will boot from Debian directly and initramfs is not needed here.
-2) Before building BBL(boot.bin), modify the bootargs of the dts file to specify the second partition of sdcard as boot device. For example,
+1) You can skip the '1. Building BusyBox' and '2. Creating the initramfs.cpio' steps in the above link. And you don't have to specify 'litex_rocket_initramfs' config when building kernel. Because we will boot from Debian directly and initramfs is not needed.  
+
+3) Before building BBL(boot.bin), modify the bootargs of the dts file to specify the second partition of sdcard as boot device. For example,
 ```
 bootargs = "earlycon=sbi console=liteuart,115200 swiotlb=noforce root=/dev/mmcblk0p2 rootwait";
 
@@ -69,7 +70,7 @@ ln -sf /usr/share/zoneinfo/Etc/GMT+8 /etc/localtime
 sync
 exit
 ```
-Refer to the pages for more information: [Debian_Rootfs](https://wiki.debian.org/RISC-V), [Switch to sysvinit](https://wiki.debian.org/Init).
+Refer to the pages for more information: [build debian rootfs](https://wiki.debian.org/RISC-V), [switch to sysvinit from systemd on debian](https://wiki.debian.org/Init).
 # Step4: Copy the 'boot.bin' and rootfs to your sdcard
 'boot.json' is [here](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/blob/main/boot.json).
 ```
