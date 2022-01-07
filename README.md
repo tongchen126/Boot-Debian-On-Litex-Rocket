@@ -30,6 +30,8 @@ mkdir riscv64-chroot
 # You can change to other mirrors like ftp.kr.debian.org or ftp.de.debian.org if deb.debian.org was slow or failed to download some packages.
 sudo debootstrap --arch=riscv64 --keyring /usr/share/keyrings/debian-ports-archive-keyring.gpg --include=debian-ports-archive-keyring unstable riscv64-chroot http://deb.debian.org/debian-ports
 sudo chroot riscv64-chroot
+chmod 1777 tmp
+chmod a+w /dev/null
 apt-get update
 # Set up basic networking
 cat >>/etc/network/interfaces <<EOF
