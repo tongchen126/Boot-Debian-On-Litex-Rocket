@@ -82,10 +82,10 @@ chmod a+w 'where the second part of your sdcard mounts'/dev/null    # Make sure 
 sync
 ```
 # Rootfs tarball
-A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
+A prebuilt bitstream for nexys video is uploaded. The build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
   
-A rootfs tarball is on the release page. The default root password is 'password'. You can skip Step 3 after downloading the tarball.
-
+A rootfs tarball is on the release page. The default root password is 'password'. You can skip Step 3 after downloading the tarball.  
+A compiled kernel 'vmlinux' is also uploaded.  
 
 
 # Demo on Nexys Video  
