@@ -20,7 +20,8 @@ bootargs = "earlycon=sbi console=liteuart,115200 swiotlb=noforce root=/dev/mmcbl
 
 ```
 3) Also, as the latest kernel uses a newer MMC module, you should make some change to the [original dts](https://github.com/litex-hub/linux-on-litex-rocket/tree/master/conf) according to [this](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/commit/1bcbc8b602e83ea81bc24e25deed52ecf9d9fdb9).  
-4) If you have trouble building, please use the toolchain [here](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/releases/download/rootfs/riscv64-unknown-elf-gcc-8.3.0.tgz).  
+4) If you have trouble building BBL, please use the toolchain [here](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/releases/download/rootfs/riscv64-unknown-elf-gcc-8.3.0.tgz).  
+  
 See the modified [nexys_video.dts](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/blob/main/nexys_video_prebuilt/nexys_video.dts) for more detail.
 
 # Step3: Build Debian rootfs
