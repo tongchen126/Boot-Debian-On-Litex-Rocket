@@ -20,6 +20,8 @@ bootargs = "earlycon=sbi console=liteuart,115200 swiotlb=noforce root=/dev/mmcbl
 
 ```
 3) Also, as the latest kernel uses a newer MMC module, you should make some change to the [original dts](https://github.com/litex-hub/linux-on-litex-rocket/tree/master/conf) according to [this](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/commit/1bcbc8b602e83ea81bc24e25deed52ecf9d9fdb9).  
+4) If you have trouble building BBL, please use the toolchain [here](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/releases/download/rootfs/riscv64-unknown-elf-gcc-8.3.0.tgz).  
+  
 See the modified [nexys_video.dts](https://github.com/tongchen126/Boot-Debian-On-Litex-Rocket/blob/main/nexys_video_prebuilt/nexys_video.dts) for more detail.
 
 # Step3: Build Debian rootfs
@@ -82,10 +84,10 @@ chmod a+w 'where the second part of your sdcard mounts'/dev/null    # Make sure 
 sync
 ```
 # Rootfs tarball
-A prebuilt bitstream for nexys video is uploaded. Build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
+A prebuilt bitstream for nexys video is uploaded. The build args is './digilent_nexys_video.py --build --cpu-type rocket --cpu-variant full4d --with-sdcard --with-ethernet', running at 100MHz.  
   
-A rootfs tarball is on the release page. The default root password is 'password'. You can skip Step 3 after downloading the tarball.
-
+A rootfs tarball is on the release page. The default root password is 'password'. You can skip Step 3 after downloading the tarball.  
+A compiled kernel 'vmlinux' is also uploaded.  
 
 
 # Demo on Nexys Video  
